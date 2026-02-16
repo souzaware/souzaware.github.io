@@ -2,11 +2,13 @@ package main
 
 import "core:fmt"
 import "core:log"
-import os "core:os/os2"
+import "core:os"
 import mustache "./vendor/odin-mustache"
 
 Data :: struct {
     social: []struct {
+        site: string,
+        page: string,
         icon_url: string,
         url: string,
     }
@@ -16,8 +18,34 @@ main :: proc() {
     data := Data{
         social = {
             {
-                icon_url = "res/icons/github-mark-white.svg",
+                site = "GitHub",
+                page = "souzaware",
+                icon_url = "res/icons/github.svg",
                 url = "https://github.com/souzaware/",
+            },
+            {
+                site = "Twitch",
+                page = "neraids",
+                icon_url = "res/icons/twitch.svg",
+                url = "https://twitch.tv/neraids",
+            },
+            {
+                site = "YouTube",
+                page = "neraid",
+                icon_url = "res/icons/youtube.svg",
+                url = "https://youtube.com/@neraid",
+            },
+            {
+                site = "StreamLabs",
+                page = "neraids",
+                icon_url = "res/icons/streamlabs.svg",
+                url = "https://streamlabs.com/neraids/tip",
+            },
+            {
+                site = "Patreon",
+                page = "neraids",
+                icon_url = "res/icons/patreon.svg",
+                url = "https://www.patreon.com/c/neraids",
             },
         }
     }
