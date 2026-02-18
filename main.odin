@@ -36,16 +36,28 @@ main :: proc() {
                 url = "https://youtube.com/@neraid",
             },
             {
-                site = "StreamLabs",
-                page = "neraids",
-                icon_url = "res/icons/streamlabs.png",
-                url = "https://streamlabs.com/neraids/tip",
-            },
-            {
                 site = "Patreon",
                 page = "neraids",
                 icon_url = "res/icons/patreon.png",
                 url = "https://www.patreon.com/c/neraids",
+            },
+            {
+                site = "X",
+                page = "neraid_live",
+                icon_url = "res/icons/x.png",
+                url = "https://x.com/neraid_live",
+            },
+            {
+                site = "Instagram",
+                page = "neraid.live",
+                icon_url = "res/icons/instagram.png",
+                url = "https://instagram.com/neraid.live",
+            },
+            {
+                site = "TikTok (eww)",
+                page = "neraid.live",
+                icon_url = "res/icons/tiktok.png",
+                url = "https://tiktok.com/@neraid.live",
             },
         }
     }
