@@ -20,9 +20,13 @@
     font-size: 22px;
 }
 
+html {
+    background-color: #000000;
+}
+
 body {
     color: lightyellow;
-    background: url("../images/background.png") no-repeat center center;
+    background: url("../images/background.png") no-repeat center top;
     background-size: cover;
     display: flex;
     justify-content: center;
