@@ -37,9 +37,9 @@ main :: proc() {
             },
             {
                 site = "Patreon",
-                page = "neraids",
+                page = "neraid_live",
                 icon_url = "res/icons/patreon.png",
-                url = "https://www.patreon.com/c/neraids",
+                url = "https://patreon.com/neraid_live",
             },
             {
                 site = "X",
