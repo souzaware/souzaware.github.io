@@ -1,4 +1,4 @@
-let list = fetch("https://www.youtube.com/feeds/videos.xml?channel_id=UC4U1e34boXZ7cjYjqzf9osw").then(res => res.text()).then(xml => {
+let list = fetch("https://api.allorigins.win/get?url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=UC4U1e34boXZ7cjYjqzf9osw")).then(res => res.text()).then(xml => {
     let id = "dQw4w9WgXcQ";
 
     try {
