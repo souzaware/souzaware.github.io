@@ -8,7 +8,8 @@ on:
     branches: [ "gh-pages" ]
 
 jobs:
-  build:
+  fetch:
+    environment: youtube-api
     runs-on: ubuntu-latest
     steps:
     - name: Pull latest video
