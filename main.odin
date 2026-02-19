@@ -59,16 +59,16 @@ main :: proc() {
         }
     }
 
-    os.copy_directory_all("static/", "src/static")
+    os.copy_directory_all("deploy/", "static/")
 
-    s, err := mustache.render_from_filename("src/templates/index.html", data)
+    s, err := mustache.render_from_filename("templates/index.html", data)
 
     if err != nil {
         log.error(err)
         return
     }
 
-    write_err := os.write_entire_file("static/index.html", transmute([]u8)s)
+    write_err := os.write_entire_file("deploy/index.html", transmute([]u8)s)
 
     if write_err != nil {
         fmt.println(err)
