@@ -1,14 +1,17 @@
-name: Trigger fetch
+name: Fetch Latest Video
 on:
   workflow_dispatch:
   schedule:
     - cron: 0 * * * *
+  push:
+    branches: [ "gh-pages" ]
+    
 jobs:
   trigger:
     environment: youtube-api
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger fetch workflow
+      - name: Trigger Fetch Latest Video
         run: |
           curl -L \
             -X POST \
