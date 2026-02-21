@@ -25,14 +25,31 @@
             <iframe id="latest_video_embed" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p>(it's my new video :D)</p>
         </aside>
-        <img src="res/images/me.gif" alt="me wearing a red tie xD">
+        <div id="interactive-gif">
+            <div class="hovered">
+                <img src="res/images/please_dont_hurt_me.png" alt="im innocent i swear">
+            </div>
+            <div class="unhovered">
+                <img src="res/images/me.gif" alt="me wearing a red tie xD">
+            </div>
+        </div>
         <main>
             <div id="socials">
                 {{#social}}
-                <a class="social-row" target="_blank" href="{{url}}">
-                    <div class="social-icon"><img src="{{icon_url}}"></div>
-                    <span class="social-text">{{title}}</span>
-                </a>
+                <div class="social-row">
+                    <div class="hand">
+                        {{#middle_finger}}
+                        <img src="res/icons/middle_finger.png" alt="">
+                        {{/middle_finger}}
+                        {{^middle_finger}}
+                        <img src="res/icons/pointing_hand.png" alt="">
+                        {{/middle_finger}}
+                    </div>
+                    <a class="social-button" target="_blank" href="{{url}}">
+                        <div class="social-icon"><img src="{{icon_url}}"></div>
+                        <span class="social-text">{{title}}</span>
+                    </a>
+                </div>
                 {{/social}}
             </div>
         </main>

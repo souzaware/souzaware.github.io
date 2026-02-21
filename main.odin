@@ -10,6 +10,7 @@ Data :: struct {
         title: string,
         icon_url: string,
         url: string,
+        middle_finger: bool,
     }
 }
 
@@ -45,6 +46,7 @@ main :: proc() {
                 title = "toXic",
                 icon_url = "res/icons/x.png",
                 url = "https://x.com/neraid_live",
+                middle_finger = true,
             },
             {
                 title = "a peek into my life",
