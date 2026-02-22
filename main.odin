@@ -25,7 +25,7 @@ main :: proc() {
             {
                 title = "my projects on github",
                 icon_url = "res/icons/github.png",
-                url = "https://github.com/souzaware/",
+                url = "https://github.com/neraid-live/",
             },
             {
                 title = "streaming on twitch",
